@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greaser Barber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Greaser</a>
+                <ul class="nav-list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-layout">
+                    <div class="hero-content">
+                        <p class="hero-subtitle">Barberia moderna</p>
+                        <h1 class="hero-title">Tu estilo empieza con un gran corte</h1>
+                        <p class="hero-text">
+                            En Greaser creamos una experiencia de barbería profesional con cortes modernos,
+                            perfilado de barba y atención personalizada para que salgas con tu mejor versión.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#contact" class="btn">Reservar turno</a>
+                            <a href="#services" class="btn btn-secondary">Ver servicios</a>
+                        </div>
+
+                        <p class="hero-benefits">
+                            Cortes clásicos · Fade · Barba · Atención personalizada
+                        </p>
+                    </div>
+
+                    <div class="hero-visual">
+                        <img src="./img/barberia_06.jpg" alt="Barbero realizando un corte profesional"
+                            class="hero-image" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-text">Trabajamos cada detalle para ofrecer un servicio de calidad, estilo y confianza.</p>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <h3 class="service-card-title">Corte degrade</h3>
+                        <p class="service-card-text">Un estilo limpio, elegante y adaptado a tu imagen personal.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card-title">Perfilado de Barba</h3>
+                        <p class="service-card-text">Nuestros barberos expertos te ayudaran a mantener tu barba en perfecta
+                            forma.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3 class="service-card-title">Combo corte + barba</h3>
+                        <p class="service-card-text">La opción ideal para un look completo y una presencia impecable.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="section-title">Reserva tu turno hoy</h2>
+                    <p class="section-text"> Llevá tu estilo al siguiente nivel con una atención profesional y una experiencia hecha a tu medida.</p>
+                    <a href="#contact" class="btn">Quiero mi turno</a>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-text">Escribinos para consultar disponibilidad, precios o reservar tu próximo turno.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="number" class="form-label">Número de teléfono</label>
+                        <input type="number" id="number" name="number" class="form-input" placeholder="Tu número de teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            class="form-input form-textarea" 
+                            placeholder="Escribinos para reservar tu turno">
+                        </textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar consulta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2026 Greaser Barbería. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
