@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -16,10 +16,16 @@
         <div class="container">
             <nav class="navbar">
                 <a href="#" class="logo">Greaser</a>
-                <ul class="nav-list">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>   
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Servicios</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,8 +52,7 @@
                     </div>
 
                     <div class="hero-visual">
-                        <img src="./img/barberia_06.jpg" alt="Barbero realizando un corte profesional"
-                            class="hero-image" />
+                        <img src="./img/barberia_06.jpg" alt="Barbero realizando un corte profesional" class="hero-image" />
                     </div>
                 </div>
             </div>
@@ -93,8 +98,8 @@
                         <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre">
                     </div>
                     <div class="form-group">
-                        <label for="number" class="form-label">Número de teléfono</label>
-                        <input type="number" id="number" name="number" class="form-input" placeholder="Tu número de teléfono">
+                        <label for="phone" class="form-label">Número de teléfono</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="Tu número de teléfono">
                     </div>
                     <div class="form-group">
                         <label for="message" class="form-label">Mensaje</label>
@@ -115,6 +120,7 @@
             <p class="footer-text">© 2026 Greaser Barbería. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -70,7 +70,7 @@ textarea {
 }
 
 .section-text {
-    color: var( --color-text-secondary);
+    color: var(--color-text-secondary);
     max-width: 700px;
     margin-bottom: 2rem;
 }
@@ -118,7 +118,7 @@ textarea {
 
 .header {
     padding: 1.25rem 0;
-    background-color: var(--color-bg);
+    background-color: rgba(17, 17, 17, 0.92);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     position: sticky;
     top: 0;
@@ -131,6 +131,7 @@ textarea {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    position: relative;
 }
 
 .logo {
@@ -156,6 +157,54 @@ textarea {
     color: var(--color-accent);
 }
 
+/* =========================
+   MENU HAMBURGUESA
+========================= */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.35rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  width: 26px;
+  height: 3px;
+  background-color: var(--color-text);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+.nav-list {
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  width: 220px;
+  padding: 1rem;
+  background-color: rgba(17, 17, 17, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--border-radius);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: var(--transition);
+}
+
+
+.nav-list.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 /* ===== Hero ===== */
 
 .hero {
@@ -165,8 +214,8 @@ textarea {
     min-height: 85vh;
     background: linear-gradient(
         180deg,
-        rgba(17, 17, 17, 1) 0%
-        rgba (26, 26, 26, 1) 100%
+        rgba(17, 17, 17, 1) 0%,
+        rgba(26, 26, 26, 1) 100%
     );
 }
 
@@ -291,7 +340,7 @@ textarea {
     width: 100%;
     padding: 0.9rem 1rem;
     border-radius: var(--border-radius);
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     background-color: var(--color-bg-secondary);
     color: var(--color-text);
     outline: none;
@@ -346,7 +395,20 @@ textarea {
     }
 
     .nav-list {
-        gap: 2rem;
+    position: static;
+    width: auto;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+
+    opacity: 1;
+    visibility: visible;
+    transform: none;
     }
 
     .hero {
@@ -366,6 +428,11 @@ textarea {
         max-width: 540px;
         font-size: 1.05rem;
     }
+
+      .nav-toggle {
+    display: none;
+  }
+
 }
 
 /* ===== Detalles ===== */
@@ -397,7 +464,7 @@ textarea {
 }
 
 .footer-text {
-    color: var(--var-text-secondary);
+    color: var(--color-text-secondary);
     font-size: 0.95rem;
     text-align: center;
 }
